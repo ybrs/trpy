@@ -1,0 +1,18 @@
+yukle, trpy.std icinden toplami, kac_tane
+
+alinin_notlari = [50, 70, 80]
+notlar_toplami = toplami(alinin_notlari)
+ortalama = notlar_toplami / kac_tane(alinin_notlari)
+
+yazdir "alinin notlarinin ortalamasi:", ortalama
+
+# fonksiyon ornegi
+ortalama(notlar)->
+    topl = 0
+    say = 0
+    her bir, notlar icin n
+        topl += n
+        say += 1
+    <- topl / say
+
+yazdir "alinin notlarinin ortalamasi:", ortalama(alinin_notlari)

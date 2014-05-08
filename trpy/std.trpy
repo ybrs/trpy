@@ -1,0 +1,17 @@
+def foo():
+    return bar
+
+kac_tane(i)->
+    <- len(i)
+
+def ortalamasi(i):
+    <- toplami(i) / kac_tane(i)
+
+def toplami(i):
+    c = 0
+    her bir, i icin x
+        c += x
+    <- c
+
+# yazdir ortalamasi([10,20])
+
