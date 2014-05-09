@@ -1,0 +1,74 @@
+
+# yorum satiri
+#
+
+# degisken atama
+a = 1
+
+# kosul
+eger, x > 10 ve x < 20 ise
+   yazdir "10 ile 20 arasinda"
+ya da, x > 30 veya y < 10
+    yazdir "x 10 dan buyuk"
+ya da,
+    yazdir "x 10 dan kucuk"
+
+
+# fonksiyon tanimlama
+foo(a, b=10)->
+    c = a * b
+    yazdir c
+    <- c    # return c
+
+bar(a, b=20)->
+    <- a * b
+
+bar(10, 30)
+
+baz(a, b=20)->
+    g(a, b)->
+        <- h
+    <- a * b
+
+
+# iterasyon
+a = [1,2,3]
+
+her bir, a icin x
+    yazdir x
+
+# while
+c = 1
+durum, c < 10 iken
+    yazdir c
+    c += 1
+
+# import
+yukle, os
+
+# from collections import OrderedDict
+yukle, collections icinden OrderedDict
+yukle, trpy.std icinden *
+
+kac_tane(i)->
+    <- len(i)
+
+toplami(i)->
+    c = 0
+    her bir, i icin x
+        c += x
+    <- c
+
+ortalamasi(i)->
+    <- toplami(i) / kac_tane(i)
+
+alinin_notlari = [50, 70, 80]
+notlar_toplami = 0
+her bir, alinin_notlari icin x
+    notlar_toplami = notlar_toplami + x
+yazdir notlar_toplami / kac_tane(alinin_notlari)
+
+
+alinin_notlari = [50, 70, 80]
+notlar_toplami = toplami(alinin_notlari)
+ortalama = notlar_toplami / kac_tane(alinin_notlari)

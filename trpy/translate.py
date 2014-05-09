@@ -164,6 +164,14 @@ import __future__
 class TrpySyntaxError(Exception):
     pass
 
+def translate_file(filename=None):
+    if not filename:
+        filename = sys.argv[1]
+    f = open(filename, 'r')
+    tokens = list(tokenize(f.read()))
+    code = translate(tokens)
+    print code
+
 def compile_file(filename, module_name=None):
     f = open(filename, 'r')
     tokens = list(tokenize(f.read()))
@@ -284,6 +292,8 @@ class MetaImporter(object):
 
 sys.meta_path.append(MetaImporter())
 sys.path.insert(0, "")
+
+
 
 
 if __name__ == "__main__":

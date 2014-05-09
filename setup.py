@@ -11,6 +11,7 @@ setup(
     entry_points = {
         'console_scripts': [
             'trpy = trpy.translate:run_file',
+            'trpy_cevir = trpy.translate:translate_file',
         ],
     }
 )

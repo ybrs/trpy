@@ -1,5 +1,3 @@
-def foo():
-    return bar
 
 kac_tane(i)->
     <- len(i)
