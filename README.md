@@ -164,9 +164,16 @@ yukle, collections icinden OrderedDict
 yukle, trpy.std icinden *
 ```
 
-Ornekler
+Aynı zamanda trpy içinde direk python kodu yazabiliriz.
+
+```
+def foo():
+    <- bar
+```
+
+Örnekler
 -----------
-Kod ornekleri, yazim.trpy ve ornekler dizinlerinde bulunuyor.
+Kod örnekleri, yazim.trpy ve ornekler dizinlerinde bulunuyor.
 
 Yapılacaklar
 ===================
